@@ -1,5 +1,5 @@
 <template>
-    <v-navigation-drawer app class="sidebar" permanent color="#F5F5F5" width="100px">
+    <v-navigation-drawer app class="sidebar" :permanent="$vuetify.breakpoint.mdAndUp" color="#F5F5F5" width="100px">
         <v-divider></v-divider>
         <v-list height="65px">
             <v-list-item v-for="item in items" :key="item.title" link>

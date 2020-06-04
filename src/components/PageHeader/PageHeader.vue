@@ -15,17 +15,18 @@
 </script>
 
 <style>
-.pageHeader{
-    background: #FAFAFA;
-    height: 89px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    .pageHeader {
+        background: #FAFAFA;
+        height: 89px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-    .pageHeader p{
+    .pageHeader p {
         font-size: 24px;
         font-weight: bold;
         color: #424242;
     }
+
 </style>

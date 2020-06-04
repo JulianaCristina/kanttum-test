@@ -13,11 +13,12 @@
         <v-card-text class="pa-2 pt-0">
             <CardList/>
         </v-card-text>
-        <v-card-actions>
-            <v-btn text class="btnCardAction" color="#328EBA" >
+        <v-card-actions :class="{'d-flex flex flex-column' :$vuetify.breakpoint.smAndDown}" >
+            <v-spacer v-if="$vuetify.breakpoint.mdAndUp"></v-spacer>
+            <v-btn text class="btnCardAction" color="#328EBA" :block="$vuetify.breakpoint.smAndDown">
                 PRÉ-VISUALIZAR
             </v-btn>
-            <v-btn class="btnCardAction white--text" color="#328EBA">
+            <v-btn class="btnCardAction white--text" color="#328EBA" :block="$vuetify.breakpoint.smAndDown">
                 VER MENTORADOS
             </v-btn>
         </v-card-actions>
@@ -44,10 +45,6 @@
     .btnCardAction span {
         font-size: 14px;
         padding: 9px 16px;
-    }
-
-    .v-card__actions {
-        justify-content: flex-end;
     }
 
     .avatarProcess {
