@@ -3,6 +3,7 @@ import App from './App.vue'
 import vuetify from './plugins/vuetify';
 import './assets/css/style.css'
 
+
 Vue.config.productionTip = false
 
 new Vue({

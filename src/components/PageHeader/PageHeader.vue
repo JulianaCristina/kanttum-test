@@ -1,6 +1,10 @@
 <template>
-    <div class="pageHeader">
-        <h2>Formação</h2>
+    <div class="pageHeader px-8">
+        <p>Formação</p>
+
+        <v-btn text>
+            <v-icon color="#E1E1E1">mdi-dots-vertical</v-icon>
+        </v-btn>
     </div>
 </template>
 
@@ -14,9 +18,14 @@
 .pageHeader{
     background: #FAFAFA;
     height: 89px;
-    width: calc(100% - 100px);
-    margin-left: 100px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
+    .pageHeader p{
+        font-size: 24px;
+        font-weight: bold;
+        color: #424242;
+    }
 </style>

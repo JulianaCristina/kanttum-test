@@ -1,28 +1,15 @@
 <template>
-    <v-navigation-drawer app
-                         class="sidebar"
-                         permanent
-                         color="#F5F5F5"
-                         width="100px"
-    >
+    <v-navigation-drawer app class="sidebar" permanent color="#F5F5F5" width="100px">
         <v-divider></v-divider>
-
         <v-list height="65px">
-            <v-list-item
-                    v-for="item in items"
-                    :key="item.title"
-                    link
-
-            >
-
+            <v-list-item v-for="item in items" :key="item.title" link>
                 <v-list-item-content>
-                    <v-icon>{{ item.icon }}</v-icon>
+                    <v-icon class="iconList">{{ item.icon }}</v-icon>
                     <v-list-item-title class="menuTitle mb-1">{{ item.title }}</v-list-item-title>
                 </v-list-item-content>
             </v-list-item>
         </v-list>
     </v-navigation-drawer>
-
 </template>
 
 <script>
@@ -57,4 +44,11 @@
     .v-navigation-drawer__border{
         background-color: #FAFAFA!important;
     }
+    .v-list-item{
+        padding: 0!important;
+    }
+    .iconList{
+        margin-bottom: 5px!important;
+    }
+
 </style>
